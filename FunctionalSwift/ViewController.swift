@@ -48,6 +48,8 @@ extension ViewController: UITableViewDelegate {
             break
         case 1:
             navigationController?.pushViewController(CoreImagePackageController(), animated: true)
+        case 2:
+            navigationController?.pushViewController(MapFilterReduceController(), animated: true)
         default:
             break
         }
