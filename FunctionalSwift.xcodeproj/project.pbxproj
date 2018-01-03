@@ -19,6 +19,7 @@
 		0415A2DF1FF12BB000C65761 /* CoreImagePackageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0415A2DD1FF12BB000C65761 /* CoreImagePackageController.xib */; };
 		0415A2E21FF12DB400C65761 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0415A2E11FF12DB400C65761 /* test.jpg */; };
 		0415A2E41FF12F9D00C65761 /* MapFilterReduceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415A2E31FF12F9D00C65761 /* MapFilterReduceController.swift */; };
+		04A4A57C1FFCFE12002E7EEB /* OptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4A57B1FFCFE12002E7EEB /* OptionalViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		0415A2DD1FF12BB000C65761 /* CoreImagePackageController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CoreImagePackageController.xib; sourceTree = "<group>"; };
 		0415A2E11FF12DB400C65761 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		0415A2E31FF12F9D00C65761 /* MapFilterReduceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFilterReduceController.swift; sourceTree = "<group>"; };
+		04A4A57B1FFCFE12002E7EEB /* OptionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				0415A2DC1FF12BB000C65761 /* CoreImagePackageController.swift */,
 				0415A2DD1FF12BB000C65761 /* CoreImagePackageController.xib */,
 				0415A2E31FF12F9D00C65761 /* MapFilterReduceController.swift */,
+				04A4A57B1FFCFE12002E7EEB /* OptionalViewController.swift */,
 			);
 			path = SecondaryControllers;
 			sourceTree = "<group>";
@@ -296,6 +299,7 @@
 				0415A2A81FF126B500C65761 /* AppDelegate.swift in Sources */,
 				0415A2E41FF12F9D00C65761 /* MapFilterReduceController.swift in Sources */,
 				0415A2DE1FF12BB000C65761 /* CoreImagePackageController.swift in Sources */,
+				04A4A57C1FFCFE12002E7EEB /* OptionalViewController.swift in Sources */,
 				0415A2D91FF12AAB00C65761 /* FunctionalThinkingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

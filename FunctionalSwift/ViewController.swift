@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    let dataSource = ["函数式思想", "案例研究: 封装Core Image", "Map、Filter和Reduce"]
+    let dataSource = ["函数式思想", "案例研究: 封装Core Image", "Map、Filter和Reduce", "可选值"]
     let identify = "cell"
     
     override func viewDidLoad() {
@@ -50,6 +50,8 @@ extension ViewController: UITableViewDelegate {
             navigationController?.pushViewController(CoreImagePackageController(), animated: true)
         case 2:
             navigationController?.pushViewController(MapFilterReduceController(), animated: true)
+        case 3:
+            navigationController?.pushViewController(OptionalViewController(), animated: true)
         default:
             break
         }
