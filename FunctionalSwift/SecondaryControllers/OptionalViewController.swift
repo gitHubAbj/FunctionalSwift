@@ -24,7 +24,7 @@ precedencegroup  ComparisonPrecedence {
     higherThan: LogicalConjunctionPrecedence
 }
 
-///定义运算符>>>为左结合
+///定义运算符??
 infix operator ??: ComparisonPrecedence
 
 // 这里的定义会有一个问题:如果default的值是通过某个函数或者表达式得到的,那么无论这个可选值是否为nil,defaultValue都会被求值.
