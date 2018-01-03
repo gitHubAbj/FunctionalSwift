@@ -95,9 +95,9 @@ extension MapFilterReduceController {
         return result
     }
     
-    /// 同理上面的函数中局限了输入数据必须为Int类型
-    /// 所以我们再次都函数就行优化
-    /// 对于任何Element的数组和transform:Element -> T函数,它都会生成一个T的新数组
+    // 同理上面的函数中局限了输入数据必须为Int类型
+    // 所以我们再次都函数就行优化
+    // 对于任何Element的数组和transform:Element -> T函数,它都会生成一个T的新数组
     func map0<Element, T>(xs: [Element], transform: (Element) -> T) -> [T] {
         var result: [T] = []
         for x in xs {
@@ -106,9 +106,11 @@ extension MapFilterReduceController {
         return result
     }
     
-    /// 同理computeIntArray、computeBoolArray两个函数之间存在的大量的相同代码
-    /// 这样的拓展性不好
-    /// 所以我们应用泛型来处理这种情况
+    // computeIntArray、computeBoolArray两个函数之间存在的大量的相同代码
+    // computeIntArray、computeBoolArray定义是相同的,唯一的区别在于类型签名
+    // 这样的拓展性不好
+    // 事实上相同部分的代码可以用于任何类型
+    // 所以我们应用泛型来处理这种情况
     func genericComputeArray1<T>(xs: [Int], transform: (Int) -> T) -> [T] {
         var result: [T] = []
         for x in xs {
@@ -229,7 +231,7 @@ extension MapFilterReduceController {
      * 所以为Array扩展一个reduce方法
      */
     
-    // 上面的方法可更改为下面的样式
+    // 上面的函数可更改为下面的样式
     func sumUsingReduce(xs: [Int]) -> Int {
         return xs.reduce(0) { result, x in result + x }
     }
@@ -276,7 +278,7 @@ extension Array {
 
 /* Any类型和泛型两者都能用于定义接受两个不同参数的类型
  * 区别: 泛型可以用于定义灵活的函数,类型检查由编译器负责
- *      Any类型则可以避免Swift的类型系统
+ *      Any类型则可以避开Swift的类型系统
  */
 extension MapFilterReduceController {
     // noOp和noOpAny两者都将接受任意参数
