@@ -121,7 +121,7 @@ class OptionalViewController: UIViewController {
         
         // Swift有一个特殊的机制--可选链
         // 使用可选链
-        // 我们使用问好运算符来尝试对可选类型解包,而不是强制将它们解包
+        // 我们使用问号运算符来尝试对可选类型解包,而不是强制将它们解包
         // 当任意一个组成失败时,整条语句链将返回nil
         if let myState = order.person?.address?.state {
             print("This order will be shipped to \(myState)")
@@ -226,6 +226,7 @@ extension Optional {
     }
     
     // flapMap定义
+    // flapMap函数检查一个可选值是否为nil.若不是,那么将其传递给参数函数f.若是nil,那么结果也是nil
     func flatMap<U>(f: (Wrapped) -> U?) -> U? {
         guard let x = self else {
             return nil

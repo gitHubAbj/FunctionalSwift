@@ -20,6 +20,8 @@
 		0415A2E21FF12DB400C65761 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0415A2E11FF12DB400C65761 /* test.jpg */; };
 		0415A2E41FF12F9D00C65761 /* MapFilterReduceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0415A2E31FF12F9D00C65761 /* MapFilterReduceController.swift */; };
 		04A4A57C1FFCFE12002E7EEB /* OptionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4A57B1FFCFE12002E7EEB /* OptionalViewController.swift */; };
+		04A4A57E2000FB34002E7EEB /* QuickCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4A57D2000FB34002E7EEB /* QuickCheckViewController.swift */; };
+		04A4A5802000FB75002E7EEB /* ValueOfImmutabilityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A4A57F2000FB75002E7EEB /* ValueOfImmutabilityViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		0415A2E11FF12DB400C65761 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		0415A2E31FF12F9D00C65761 /* MapFilterReduceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapFilterReduceController.swift; sourceTree = "<group>"; };
 		04A4A57B1FFCFE12002E7EEB /* OptionalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalViewController.swift; sourceTree = "<group>"; };
+		04A4A57D2000FB34002E7EEB /* QuickCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickCheckViewController.swift; sourceTree = "<group>"; };
+		04A4A57F2000FB75002E7EEB /* ValueOfImmutabilityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValueOfImmutabilityViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +151,8 @@
 				0415A2DD1FF12BB000C65761 /* CoreImagePackageController.xib */,
 				0415A2E31FF12F9D00C65761 /* MapFilterReduceController.swift */,
 				04A4A57B1FFCFE12002E7EEB /* OptionalViewController.swift */,
+				04A4A57D2000FB34002E7EEB /* QuickCheckViewController.swift */,
+				04A4A57F2000FB75002E7EEB /* ValueOfImmutabilityViewController.swift */,
 			);
 			path = SecondaryControllers;
 			sourceTree = "<group>";
@@ -298,7 +304,9 @@
 				0415A2AA1FF126B500C65761 /* ViewController.swift in Sources */,
 				0415A2A81FF126B500C65761 /* AppDelegate.swift in Sources */,
 				0415A2E41FF12F9D00C65761 /* MapFilterReduceController.swift in Sources */,
+				04A4A57E2000FB34002E7EEB /* QuickCheckViewController.swift in Sources */,
 				0415A2DE1FF12BB000C65761 /* CoreImagePackageController.swift in Sources */,
+				04A4A5802000FB75002E7EEB /* ValueOfImmutabilityViewController.swift in Sources */,
 				04A4A57C1FFCFE12002E7EEB /* OptionalViewController.swift in Sources */,
 				0415A2D91FF12AAB00C65761 /* FunctionalThinkingController.swift in Sources */,
 			);
