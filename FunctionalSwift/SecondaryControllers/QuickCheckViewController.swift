@@ -41,7 +41,7 @@ class QuickCheckViewController: UIViewController {
     // 使用Swift的尾随闭包语法，我们也可以直接编写测试，而无需单独定义(像plusIsCommutative或minusIsCommutative这样的)特性:
     // check("Additive identity") { (x: Int) in x + 0 == x }
     // print: "Additive identity" passed 10 tests.
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -94,8 +94,6 @@ protocol Smaller {
 protocol Arbitrary: Smaller {
     static func arbitrary() -> Self
 }
-
-
 
 extension Int: Arbitrary {
     static func arbitrary() -> Int {

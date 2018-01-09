@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
-    let dataSource = ["函数式思想", "案例研究: 封装Core Image", "Map、Filter和Reduce", "可选值", "案例研究: QuickCheck", "不可变性的价值"]
+    let dataSource = ["函数式思想", "案例研究: 封装Core Image", "Map、Filter和Reduce", "可选值", "案例研究: QuickCheck", "不可变性的价值", "枚举"]
     let identify = "cell"
     
     override func viewDidLoad() {
@@ -56,6 +56,8 @@ extension ViewController: UITableViewDelegate {
             navigationController?.pushViewController(QuickCheckViewController(), animated: true)
         case 5:
             navigationController?.pushViewController(ValueOfImmutabilityViewController(), animated: true)
+        case 6:
+            navigationController?.pushViewController(EnumViewController(), animated: true)
         default:
             break
         }

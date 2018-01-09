@@ -78,7 +78,13 @@ class OptionalViewController: UIViewController {
     // 存储欧洲的几个城市人口数量的字典
     let cities = ["Paris": 2241, "Madrid": 3165, "Amsterdam": 827, "Berlin": 3562]
     let order = Order(orderName: 121, person: nil)
-
+    
+    // 国家和其首都相关联
+    let capitals = ["France" : "Paris",
+                    "Spain" : "Madrid",
+                    "The Netherlands" : "Amsterdam",
+                    "Belgium" : "Brussels"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -235,6 +241,29 @@ extension Optional {
     }
 }
 
-
+extension OptionalViewController {
+    func populationOfCaptial(country: String) -> Int? {
+        guard let capital = capitals[country], let population = cities[capital] else {
+            return nil
+        }
+        return population * 1000
+    }
+    
+    func populationOfCaptial2(country: String) -> Int? {
+        return capitals[country].flatMap { capital in
+            cities[capital].flatMap { population in
+                return population * 1000
+            }
+        }
+    }
+    
+    func populationOfCaptial3(country: String) -> Int? {
+        return capitals[country].flatMap { capital in
+            return cities[capital]
+            }.flatMap { population in
+                return population * 1000
+        }
+    }
+}
 
 
