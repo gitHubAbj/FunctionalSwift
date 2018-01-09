@@ -208,6 +208,7 @@ class EnumViewController: UIViewController {
         } catch {
             print("Lookup error: \(error)")
         }
+        // France is population is 2241
     }
 }
 
@@ -215,7 +216,7 @@ extension EnumViewController {
     // 枚举也常常被称为"和类型"
     // 使用枚举和多元祖定义的类型有时候也被称作代数数据类型，因为它们就像自然数一样，具有代数学结构
     // 同构:如果两个类型A和B在相互转换时不会丢失任何信息，那么它们就是同构的.
-    // 就像命名表达一样,Add枚举是T与U的成员相加之和:如果T有三个成员，而U又七个成员，那么Add<T, U>就会有是个可能的成员。
+    // 就像命名表达一样,Add枚举是T与U的成员相加之和:如果T有三个成员，而U又七个成员，那么Add<T, U>就会有十个可能的成员。
     enum Add<T, U> {
         case InLeft(T)
         case IntRight(U)
@@ -229,7 +230,7 @@ extension EnumViewController {
     // 我们再尝试下乘法
     // T:包含三个成员 U:包含两个成员
     // 我们定义一个混合类型Times<T, U>， 使其包含六个成员
-    // 同时选择一个T成员和yigeU成员
+    // 同时选择一个T成员和一个U成员
     struct Times<T, U> {
         let fst: T
         let snd: U
